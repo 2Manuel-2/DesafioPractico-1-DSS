@@ -8,6 +8,7 @@
 <body>
 <?php
 
+
 $codigo=$_GET['cod'];
 
 $productos=simplexml_load_file("../productos.xml");
@@ -29,8 +30,6 @@ foreach ( $productos -> producto as $pro ) {
     require 'procesar.php';
   ?>
     <section>
-    <div class="card-body p-4 p-md-5">
-                  <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Formulario de registro</h3>
                   <?php
                   if(count($errores)>0&&isset($_POST['enviar'])){
                     echo "<div class='alert alert-danger'><ul>";
@@ -42,67 +41,7 @@ foreach ( $productos -> producto as $pro ) {
                   }
                   
                   ?>
-                  <form method="POST" action="<?= $_SERVER['PHP_SELF']?>">
-                    <div class="row">
-                      <div class="col-md-6 mb-4">
-      
-                        <div class="form-outline">
-                          <input type="text" id="nombres" name="nombres" 
-                          class="form-control form-control-lg"
-                          value="<?= (isset($nombres))?$nombres:''?>" />
-                          <label class="form-label" for="nombres">Nombres</label>
-                        </div>
-      
-                      </div>
-                      <div class="col-md-6 mb-4">
-      
-                        <div class="form-outline">
-                          <input type="text" id="apellidos" name="apellidos" 
-                          class="form-control form-control-lg"
-                          value="<?= (isset($apellidos))?$apellidos:''?>" />
-                          <label class="form-label" for="apellidos">Apellidos</label>
-                        </div>
-      
-                      </div>
-                    </div>
-      
-                    
-                    <div class="row">
-                      <div class="col-md-6 mb-4 pb-2">
-      
-                        <div class="form-outline">
-                          <input type="text" id="correo" name="correo"  class="form-control form-control-lg" />
-                          <label class="form-label" for="correo">Correo</label>
-                        </div>
-      
-                      </div>
-                      <div class="col-md-6 mb-4 pb-2">
-      
-                        <div class="form-outline">
-                          <input type="text" id="telefono" name="telefono" class="form-control form-control-lg" />
-                          
-                          <label class="form-label" for="telefono">Telefono</label>
-                        </div>
-      
-                      </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-4 pb-2">
-        
-                          <div class="form-outline">
-                            <input type="text" id="carnet" name="carnet"  class="form-control form-control-lg" />
-                            <label class="form-label" for="carnet">Carnet</label>
-                          </div>
-        
-                        </div>
-                        
-                      </div>
-      
-                      <input class="btn btn-primary btn-lg" type="submit" name="enviar" value="Enviar" />
-                    
-      
-                  </form>
-                </div>
+                  
                   <!--form que voy a usar-->
                 <div>
                 <form method="POST" action="../Controlador/editar.php?cod=<?=$pro->codigo?>">

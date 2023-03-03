@@ -142,8 +142,6 @@
         <img>PROD00016.jpg</img>
         <categoria>Promocional</categoria>
         <precio>5.50</precio>
-        <existencias>500</existencias>
+        <existencias>50</existencias>
     </producto>                          
-    <producto><codigo>PRO00025</codigo><nombre>MATEMATICAS</nombre><descripcion>gr</descripcion><img>carnet UDB.png</img><categoria>Textiles</categoria><precio>25</precio><existencias>55</existencias></producto>
-
-</productos>
+<producto><codigo>PRO00025</codigo><nombre>MATEMATICAS</nombre><descripcion>sd</descripcion><img>carnet UDB.png</img><categoria>Textiles</categoria><precio>25</precio><existencias>450</existencias></producto></productos>
