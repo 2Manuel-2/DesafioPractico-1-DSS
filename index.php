@@ -13,6 +13,7 @@
             <h1>TextilExport</h1>
         </div>
         <hr>
+        <h2>Productos</h2><br><br><br>
 
         <?php
         $productos=simplexml_load_file("productos.xml");
