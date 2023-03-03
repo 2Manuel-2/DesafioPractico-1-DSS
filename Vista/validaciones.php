@@ -1,7 +1,6 @@
 <?php
 function estaVacio($var){
  return empty(trim($var));
- gh
 }
 
 function esTexto($var){

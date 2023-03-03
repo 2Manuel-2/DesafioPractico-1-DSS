@@ -144,6 +144,6 @@
         <precio>5.50</precio>
         <existencias>500</existencias>
     </producto>                          
-    <producto><codigo>PRO00025</codigo><nombre>MATEMATICAS</nombre><descripcion>gr</descripcion><img>carnet UDB.png</img><categoria>Textiles</categoria><precio>25</precio><existencias>55</existencias></producto>
+    <producto><codigo>PRO00025</codigo><nombre>MATEMATICAS</nombre><descripcion>gr</descripcion><img>carnet UDB.png</img><categoria>Textiles</categoria><precio>25</precio><existencias>5</existencias></producto>
 
-</productos>
+<../productos.xml><codigo>JJ</codigo><nombre>CARNET</nombre><descripcion>bzs</descripcion><img>carnet UDB.png</img><categoria>Textiles</categoria><precio>2.4</precio><existencias>450</existencias></../productos.xml></productos>
