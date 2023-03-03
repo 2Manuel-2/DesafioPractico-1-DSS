@@ -2,12 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Calculadora de CUM</title>
+    <title>Vista Admin</title>
     <link rel="stylesheet" type="text/css" href="../Controlador/assets/css/bootstrap.css">
 </head>
 <body>
 <div class="container">
-    <h1 class="page-header text-center">Calculadora de CUM</h1>
+    <h1 class="page-header text-center">Vista Admin</h1>
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
             <a href="VistaNewProduct.php" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> Agregar Producto</a>
