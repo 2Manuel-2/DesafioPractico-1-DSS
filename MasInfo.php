@@ -118,7 +118,7 @@ foreach ( $productos -> producto as $pro ) {
             <br>
        
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> <a href="VistaAdmin.php">Cancelar</a></button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> <a href="index.php">Cancelar</a></button>
                 <button type="submit" name="add" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Agregar</a>
             </div>
 			</form>
