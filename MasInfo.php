@@ -76,6 +76,18 @@ foreach ( $productos -> producto as $pro ) {
         </div>
       </section><br><br><br>
 </div>
-
+<div class="box-area">
+    <footer>
+        <div class="wrapper">
+        <div class="logo">
+            <a class="title" href="#">TextilExport</a>
+        </div>
+      
+           
+        
+       
+        </div>
+    </footer>
+</div>
 </body>
 </html>
