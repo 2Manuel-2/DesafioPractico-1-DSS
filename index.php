@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>TextilExport - Inicio</title>
-    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <div class="box-area">
@@ -22,11 +22,11 @@
 </div>
 <hr>
 
-
+<div class="banner"></div>
     <div class="container">
    
     
-        <div class="banner"></div>
+        
         <h2>Productos</h2><br><br><br>
 
         <?php

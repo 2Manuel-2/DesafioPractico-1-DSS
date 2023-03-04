@@ -27,7 +27,7 @@ header{
 
 .banner{
     width: 100%;
-    background-image: url("../img/banner.png");
+    background-image: url("../img/IMGBAN2.png");
     height: 75vh;
     object-fit: fill;
     position: relative;
@@ -137,3 +137,69 @@ footer{
 }
 
 
+
+@media only screen and (min-width: 576px) {
+    .banner{
+        width: 100%;
+        background-image: url("../img/IMGBAN2.png");
+        height: 25vh;
+        object-fit: fill;
+        background-size: cover;
+        top: 0;
+        background-position: center;
+        margin-bottom: 40px;
+      }
+}
+
+@media only screen and (min-width: 414px) {
+    .banner{
+        width: 100%;
+        background-image: url("../img/IMGBAN2.png");
+        height: 17vh;
+        object-fit: fill;
+        background-size: cover;
+        top: 0;
+        background-position: center;
+        margin-bottom: 40px;
+      }
+}
+@media only screen and (min-width: 820px) {
+    .banner{
+        width: 100%;
+        background-image: url("../img/IMGBAN2.png");
+        height: 25vh;
+        object-fit: fill;
+        background-size: cover;
+        top: 0;
+        background-position: center;
+        margin-bottom: 40px;
+      }
+}
+
+
+
+@media only screen and (min-width: 281px) {
+    .banner{
+        width: 100%;
+        background-image: url("../img/IMGBAN2.png");
+        height: 15vh;
+        object-fit: fill;
+        background-size: cover;
+        top: 0;
+        background-position: center;
+        margin-bottom: 40px;
+      }
+}
+
+@media only screen and (min-width: 1024px) {
+    .banner{
+        width: 100%;
+        background-image: url("../img/IMGBAN2.png");
+        height: 75vh;
+        object-fit: fill;
+        background-size: cover;
+        top: 0;
+        background-position: center;
+        margin-bottom: 40px;
+      }
+}

@@ -17,6 +17,9 @@ if(in_array($_FILES['image']['type'], $permitidos) && $_FILES['image']['size'] <
 
     foreach ( $productos -> producto as $pro ) {
         if ( $pro -> codigo  ==  $codigo ) {
+
+            
+
         $pro->nombre = $nombre;
         $pro->descripcion = $descripcion;
         $pro->img = $img;
@@ -33,7 +36,6 @@ if(in_array($_FILES['image']['type'], $permitidos) && $_FILES['image']['size'] <
         $pro->nombre = $nombre;
         $pro->descripcion = $descripcion;
         $pro->img = $img;
-        $pro->img = $nuevoNombreFoto;
         $pro->categoria = $categoria;
         $pro->precio = $precio;
         $pro->existencias = $existencias;

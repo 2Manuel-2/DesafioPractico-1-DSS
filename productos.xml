@@ -144,4 +144,4 @@
         <precio>5.50</precio>
         <existencias>50</existencias>
     </producto>                          
-<producto><codigo>PROD54321</codigo><nombre>Carnet</nombre><descripcion>este es un carnet</descripcion><img>PROD54321.png</img><categoria>producto</categoria><precio>6.25</precio><existencias>0</existencias></producto></productos>
+<producto><codigo>PROD54321</codigo><nombre>Carnet</nombre><descripcion>este es un carnet</descripcion><img>PROD54321.jpg</img><categoria>producto</categoria><precio>2.20</precio><existencias>0</existencias></producto></productos>
