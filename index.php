@@ -11,7 +11,7 @@
         <div class="wrapper">
         <div class="logo">
             <a class="title" href="#">TextilExport</a>
-            <a class="admin" href="Controlador/">Administrador</a>
+            <a class="admin" href="Vista/VistaAdmin.php">Administrador</a>
         </div>
       
            
