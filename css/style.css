@@ -119,6 +119,13 @@ img{
     color: black;
 }
     
+.error{
+    text-align: center;
+    text-transform: uppercase;
+    color: crimson;
+    font-weight: bold;
+}
+
 
 
 

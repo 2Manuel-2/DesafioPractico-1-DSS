@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de registro</title>
+    <title>ver producto TE</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="css/styleInfo.css">
     </head>
 <body>
+<div class="box-area">
+    <header>
+        <div class="wrapper">
+        <div class="logo">
+            <a class="title" href="#">TextilExport</a>
+            <a class="admin" href="Vista/VistaAdmin.php">Administrador</a>
+        </div>
+      
+           
+        
+       
+        </div>
+    </header>
+</div>
+<hr><br>
 <?php
 
 
@@ -23,98 +38,35 @@ foreach ( $productos -> producto as $pro ) {
     $pro->img;
     $pro->categoria;
     $pro->precio;
-    $pro->existencias;
+	$estado = $pro->existencias;
         break;
-    }
-}
+    };
+	
+};
+
+
 ?>
- 
+  <div class="container">
 	<section class="vh-100 gradient-custom">
-        <div class="container py-5 h-100">
-          <div class="row justify-content-center align-items-center h-100">
-            <div class="col-12 col-lg-9 col-xl-7">
+        <div class="container py-5 h-200">
+          <div class="row justify-content-center align-items-center h-200">
+            <div class="col-12 col-lg-9 col-xl-11">
               <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
                 <div class="card-body p-4 p-md-5">
-                  <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Informacion del Articulo</h3>
-
+                  <h2 class="mb-4 pb-2 pb-md-0 mb-md-5">Informacion del Producto</h2>
 				  <form method="POST" action="../Controlador/editar.php?cod=<?=$pro->codigo?>" enctype="multipart/form-data">
-
-				<div class="row form-group">
-					<div class="col-sm-2">
-						<label class="form-label" for="codigo" >Codigo:</label>
-					</div>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" name="codigo" id="codigo" value="<?=$codigo?>" readonly>
-					</div>
-				</div>
-
-				<br>
-
-				<div class="row form-group">
-					<div class="col-sm-2">
-						<label class="form-label" for="nombre">Nombre:</label>
-					</div>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" name="nombre" id="nombre" value="<?=$pro-> nombre;?>" readonly>
-					</div>
-				</div>
-				<br>
-
-				<div class="row form-group">
-					<div class="col-sm-2">
-						<label class="form-label" for="descripcion">Descripción:</label>
-					</div>
-					<div class="col-sm-10">
-          	<textarea name="descripcion" id="descripcion" cols="65	" rows="10"  readonly><?=$pro-> descripcion;?></textarea>
-					</div>
-				</div>
-				<br>
-
-        <div class="row form-group">
-					<div class="col-sm-2">
-						<label class="form-label" for="img">Imagen Actual:</label>
-					</div>
-					<div class="col-sm-10">
-          <img src="img/<?=$pro-> img?>" width="250px" alt="">
-          <input  type="hidden" class="form-control" name="img" id="img" value="<?=$pro-> img;?>">
-				</div>
-<br>
-<br>
-				<div class="row form-group">
-					<div class="col-sm-2">
-						<label class="form-label" for="categoria">Categoria:</label>
-					</div>
-					<div class="col-sm-10">
-					<input type="text" class="form-control" name="categoria" id="categoria" value="<?=$pro-> categoria;?>" readonly>
-					
-				</div>
-<br>
-<br>
-        <div class="row form-group">
-					<div class="col-sm-2">
-						<label class="form-label" for="precio">Precio:</label>
-					</div>
-					<div class="col-sm-10">
-						<input type="number" step="0.01"class="form-control" name="precio" id="precio" value="<?=$pro-> precio;?>" readonly>
-					</div>
-				</div>
-<br>
-<br>
-        <div class="row form-group">
-					<div class="col-sm-2">
-						<label class="form-label" for="existencias">existencias:</label>
-					</div>
-					<div class="col-sm-10">
-						<input type="number" class="form-control" name="existencias" id="existencias" value="<?=$pro-> existencias;?>" readonly>
-					</div>
-				</div>
-            <br>
-       
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> <a href="index.php">VOLVER</a></button>
-                
-            </div>
-			</form>
+				  <div class="proFoto">
+				  <img src="img/<?= $pro->img?>" class="cardFoto" alt="Foto">
+				  </div>
+				  <div class="proInfo">
+				  <p class="title"><?= $pro->nombre?></p>
+				  <p class="categoria"><?= $pro->categoria?></p>
+				  <p><?= $pro->descripcion?></p>
+				  <p>Cantidades restantes: <?php if ($estado == 0){$estado = "Produco no disponible";} echo $estado?></p>
+				  <p>$<?= $pro->precio?></p>
+				  <div class="buttonView"><a class="aView" href="index.php">Volver</a></div>
+				  </div>
+				</form>
 
                   
                 </div>
@@ -122,7 +74,8 @@ foreach ( $productos -> producto as $pro ) {
             </div>
           </div>
         </div>
-      </section>
+      </section><br><br><br>
+</div>
 
 </body>
 </html>

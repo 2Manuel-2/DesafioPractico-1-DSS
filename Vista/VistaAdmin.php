@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Vista Admin</title>
     <link rel="stylesheet" type="text/css" href="../Controlador/assets/css/bootstrap.css">
+   
+
 </head>
 <body>
 <div class="container">
@@ -11,7 +13,7 @@
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
             <a href="VistaNewProduct.php" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> Agregar Producto</a>
-            <a href="../index.php" class="btn btn-primary" data-toggle="modal"> Volver</a>
+            <a href="../index.php" class="btn btn-default">Volver</a>
             <table class="table table-bordered table-striped" style="margin-top:20px;">
                 <thead>
                     <th>Codigo</th>
@@ -24,7 +26,12 @@
                     <th></th>
                 </thead>
                 <tbody>
+                   <?php
+                    $productos=simplexml_load_file("../productos.xml");
                    
+                    foreach($productos->producto as $pro){
+                      
+                   ?> 
                    <tr>
                     <td><?= $pro->codigo?></td>
                     <td><?= $pro->nombre?></td>
@@ -43,7 +50,7 @@
                    ?>
                 </tbody>
             </table>
-         
+            <a href="../index.php" class="btn btn-default">Volver</a><br><br>
         </div>
     </div>
 </div>

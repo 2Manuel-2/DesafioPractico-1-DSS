@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Calculadora de CUM</title>
+    <title>TextilExport - Inicio</title>
     <link rel="stylesheet" type="text/css" href="css/Style.css">
 </head>
 <body>
@@ -32,21 +32,18 @@
         <?php
         $productos=simplexml_load_file("productos.xml");
         foreach($productos->producto as $pro){
+            $estado = $pro->existencias;
+
             ?> 
             <div class="card">
-                
-            <!--<p>Descripción: <?//=$pro->descripcion?></p>-->
-                <img src="img/<?= $pro->img?>" class="cardFoto" alt="Foto">
-            <!--<p>Categoria: <?//=$pro->categoria?></p>-->
+            <p class="error"><?php if ($estado == 0){$estado = "Produco no disponible"; echo $estado;} ?></p>
+            <img src="img/<?= $pro->img?>" class="cardFoto" alt="Foto">
             <div class="cardInfo">
-                    <p><?= $pro->nombre?></p>
-            <!--<p><?//= $pro->codigo?></p>-->
-                </div>
-                <p>$<?= $pro->precio?></p>
-            <!--<p>Existencias: <?//=$pro->existencias?></p>-->
+            <p><?= $pro->nombre?></p>
+            </div>
+            <p class="precio">$<?= $pro->precio?></p>
             <div class="buttonView"><a class="aView" href="MasInfo.php?cod=<?= $pro->codigo?>">Ver</a></div>
             </div>
-            
             <?php
             }
             ?>
