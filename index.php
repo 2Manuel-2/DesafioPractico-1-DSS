@@ -44,7 +44,7 @@
                 </div>
                 <p>$<?= $pro->precio?></p>
             <!--<p>Existencias: <?//=$pro->existencias?></p>-->
-            <div class="buttonView"><a class="aView" href="">Ver</a></div>
+            <div class="buttonView"><a class="aView" href="MasInfo.php?cod=<?= $pro->codigo?>">Ver</a></div>
             </div>
             
             <?php
