@@ -6,14 +6,26 @@
     <link rel="stylesheet" type="text/css" href="css/Style.css">
 </head>
 <body>
-    
+<div class="box-area">
+    <header>
+        <div class="wrapper">
+        <div class="logo">
+            <a class="title" href="#">TextilExport</a>
+            <a class="admin" href="Controlador/">Administrador</a>
+        </div>
+      
+           
+        
+       
+        </div>
+    </header>
+</div>
+<hr>
+
+
     <div class="container">
    
-    <div class="title">
-            <h1>TextilExport</h1>
-        </div>
-        <hr>
-
+    
         <div class="banner"></div>
         <h2>Productos</h2><br><br><br>
 
@@ -32,7 +44,7 @@
                 </div>
                 <p>$<?= $pro->precio?></p>
             <!--<p>Existencias: <?//=$pro->existencias?></p>-->
-            <div class="buttonView"><a href="">Ver</a></div>
+            <div class="buttonView"><a class="aView" href="">Ver</a></div>
             </div>
             
             <?php
