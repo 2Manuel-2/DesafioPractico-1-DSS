@@ -35,7 +35,7 @@ foreach ( $productos -> producto as $pro ) {
             <div class="col-12 col-lg-9 col-xl-7">
               <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
                 <div class="card-body p-4 p-md-5">
-                  <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Actualizació de datos</h3>
+                  <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Informacion del Articulo</h3>
 
 				  <form method="POST" action="../Controlador/editar.php?cod=<?=$pro->codigo?>" enctype="multipart/form-data">
 
@@ -55,7 +55,7 @@ foreach ( $productos -> producto as $pro ) {
 						<label class="form-label" for="nombre">Nombre:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="nombre" id="nombre" value="<?=$pro-> nombre;?>">
+						<input type="text" class="form-control" name="nombre" id="nombre" value="<?=$pro-> nombre;?>" readonly>
 					</div>
 				</div>
 				<br>
@@ -65,7 +65,7 @@ foreach ( $productos -> producto as $pro ) {
 						<label class="form-label" for="descripcion">Descripción:</label>
 					</div>
 					<div class="col-sm-10">
-          	<textarea name="descripcion" id="descripcion" cols="65	" rows="10" ><?=$pro-> descripcion;?></textarea>
+          	<textarea name="descripcion" id="descripcion" cols="65	" rows="10"  readonly><?=$pro-> descripcion;?></textarea>
 					</div>
 				</div>
 				<br>
@@ -77,12 +77,8 @@ foreach ( $productos -> producto as $pro ) {
 					<div class="col-sm-10">
           <img src="img/<?=$pro-> img?>" width="250px" alt="">
           <input  type="hidden" class="form-control" name="img" id="img" value="<?=$pro-> img;?>">
-		  
-                      <div class="col-md-6 mb-4">
-                        <input  type="file" class="form-control" name="image" id="image">
-                      </div>
-					</div>
 				</div>
+<br>
 <br>
 				<div class="row form-group">
 					<div class="col-sm-2">
@@ -90,36 +86,33 @@ foreach ( $productos -> producto as $pro ) {
 					</div>
 					<div class="col-sm-10">
 					<input type="text" class="form-control" name="categoria" id="categoria" value="<?=$pro-> categoria;?>" readonly>
-					<select name="categoria" id="categoria" >
-                          <option value="Textiles">Textiles</option>
-                          <option value="producto" selected>Producto</option>
-                        </select>
-						
-					</div>
+					
 				</div>
+<br>
 <br>
         <div class="row form-group">
 					<div class="col-sm-2">
 						<label class="form-label" for="precio">Precio:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="number" step="0.01"class="form-control" name="precio" id="precio" value="<?=$pro-> precio;?>">
+						<input type="number" step="0.01"class="form-control" name="precio" id="precio" value="<?=$pro-> precio;?>" readonly>
 					</div>
 				</div>
+<br>
 <br>
         <div class="row form-group">
 					<div class="col-sm-2">
 						<label class="form-label" for="existencias">existencias:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="number" class="form-control" name="existencias" id="existencias" value="<?=$pro-> existencias;?>">
+						<input type="number" class="form-control" name="existencias" id="existencias" value="<?=$pro-> existencias;?>" readonly>
 					</div>
 				</div>
             <br>
        
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> <a href="index.php">Cancelar</a></button>
-                <button type="submit" name="add" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Agregar</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> <a href="index.php">VOLVER</a></button>
+                
             </div>
 			</form>
 
