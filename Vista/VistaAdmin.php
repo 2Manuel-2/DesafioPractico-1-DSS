@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
             <a href="VistaNewProduct.php" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> Agregar Producto</a>
-            
+            <a href="../index.php" class="btn btn-primary" data-toggle="modal"> Volver</a>
             <table class="table table-bordered table-striped" style="margin-top:20px;">
                 <thead>
                     <th>Codigo</th>
