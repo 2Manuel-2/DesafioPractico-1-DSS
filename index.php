@@ -8,11 +8,13 @@
 <body>
     
     <div class="container">
-
+   
     <div class="title">
             <h1>TextilExport</h1>
         </div>
         <hr>
+
+        <div class="banner"></div>
         <h2>Productos</h2><br><br><br>
 
         <?php
