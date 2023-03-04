@@ -5,16 +5,16 @@
         <nombre>Camiseta de algod&#xF3;n cuello redondo</nombre>
         <descripcion>Camiseta Mod. 1, elaborada en algod&#xF3;n de 200 grs. cuello redondo decorado, manga corta, costuras en cierres laterales.</descripcion>
         <img>PROD00001.jpg</img>
-        <categoria>Textil</categoria>
-        <precio>2.50</precio>
-        <existencias>500</existencias>
+        <categoria>producto</categoria>
+        <precio>3.33</precio>
+        <existencias>52</existencias>
     </producto>
     <producto>
         <codigo>PROD00002</codigo>
         <nombre>Camiseta de algod&#xF3;n cuello V</nombre>
         <descripcion>Camiseta Mod. 2, elaborada en algod&#xF3;n de 200 grs. cuello en V decorado, manga corta, costuras en cierres laterales.</descripcion>
         <img>PROD00002.jpg</img>
-        <categoria>Textil</categoria>
+        <categoria>Textiles</categoria>
         <precio>2.90</precio>
         <existencias>462</existencias>
     </producto>
@@ -144,4 +144,4 @@
         <precio>5.50</precio>
         <existencias>50</existencias>
     </producto>                          
-<producto><codigo>PRO00025</codigo><nombre>MATEMATICAS</nombre><descripcion>sd</descripcion><img>carnet UDB.png</img><categoria>Textiles</categoria><precio>25</precio><existencias>450</existencias></producto></productos>
+<producto><codigo>PROD12345</codigo><nombre>CARNET</nombre><descripcion>CASFSD</descripcion><img>PROD12345.png</img><categoria>Textiles</categoria><precio>3.25</precio><existencias>50</existencias></producto></productos>
