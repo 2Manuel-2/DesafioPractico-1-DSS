@@ -15,20 +15,33 @@ if(in_array($_FILES['image']['type'], $permitidos) && $_FILES['image']['size'] <
     $ruta = "../img/". $nuevoNombreFoto;
     move_uploaded_file($_FILES["image"]["tmp_name"], $ruta);
 
-foreach ( $productos -> producto as $pro ) {
-    if ( $pro -> codigo  ==  $codigo ) {
-    $pro->nombre = $nombre;
-    $pro->descripcion = $descripcion;
-    $pro->img = $nuevoNombreFoto;
-    $pro->categoria = $categoria;
-    $pro->precio = $precio;
-    $pro->existencias = $existencias;
-        break;
+    foreach ( $productos -> producto as $pro ) {
+        if ( $pro -> codigo  ==  $codigo ) {
+        $pro->nombre = $nombre;
+        $pro->descripcion = $descripcion;
+        $pro->img = $img;
+        $pro->img = $nuevoNombreFoto;
+        $pro->categoria = $categoria;
+        $pro->precio = $precio;
+        $pro->existencias = $existencias;
+            break;
+        }
     }
-}}
+}else{
+    foreach ( $productos -> producto as $pro ) {
+        if ( $pro -> codigo  ==  $codigo ) {
+        $pro->nombre = $nombre;
+        $pro->descripcion = $descripcion;
+        $pro->img = $img;
+        $pro->img = $nuevoNombreFoto;
+        $pro->categoria = $categoria;
+        $pro->precio = $precio;
+        $pro->existencias = $existencias;
+            break;
+        }
+    }
+}
 
 file_put_contents ( '../productos.xml',$productos->asXML());
 header('location:../Vista/VistaAdmin.php');
-
-
 ?>

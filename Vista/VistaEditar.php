@@ -75,11 +75,11 @@ foreach ( $productos -> producto as $pro ) {
 						<label class="form-label" for="img">Imagen Actual:</label>
 					</div>
 					<div class="col-sm-10">
-          <img src="../img/<?=$pro-> img?>" width="250px" alt="">
+          <img src="../img/<?=$pro-> img?>" width="250px" alt="" >
           <input  type="hidden" class="form-control" name="img" id="img" value="<?=$pro-> img;?>">
 		  
                       <div class="col-md-6 mb-4">
-                        <input  type="file" class="form-control" name="image" id="image">
+                        <input  type="file" class="form-control" name="image" id="image" >
                       </div>
 					</div>
 				</div>

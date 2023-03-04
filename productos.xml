@@ -5,9 +5,9 @@
         <nombre>Camiseta de algod&#xF3;n cuello redondo</nombre>
         <descripcion>Camiseta Mod. 1, elaborada en algod&#xF3;n de 200 grs. cuello redondo decorado, manga corta, costuras en cierres laterales.</descripcion>
         <img>PROD00001.jpg</img>
-        <categoria>Textil</categoria>
+        <categoria>producto</categoria>
         <precio>2.50</precio>
-        <existencias>500</existencias>
+        <existencias>50</existencias>
     </producto>
     <producto>
         <codigo>PROD00002</codigo>
@@ -144,4 +144,4 @@
         <precio>5.50</precio>
         <existencias>50</existencias>
     </producto>                          
-<producto><codigo>PROD54321</codigo><nombre>Carnet</nombre><descripcion>este es un carnet</descripcion><img>PROD54321.png</img><categoria>producto</categoria><precio>6.25</precio><existencias>3</existencias></producto></productos>
+<producto><codigo>PROD54321</codigo><nombre>Carnet</nombre><descripcion>este es un carnet</descripcion><img>PROD54321.png</img><categoria>producto</categoria><precio>6.25</precio><existencias>0</existencias></producto></productos>
