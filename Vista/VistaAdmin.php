@@ -24,12 +24,7 @@
                     <th></th>
                 </thead>
                 <tbody>
-                   <?php
-                    $productos=simplexml_load_file("../productos.xml");
                    
-                    foreach($productos->producto as $pro){
-                      
-                   ?> 
                    <tr>
                     <td><?= $pro->codigo?></td>
                     <td><?= $pro->nombre?></td>
